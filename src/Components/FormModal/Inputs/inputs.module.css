@@ -1,0 +1,33 @@
+.input__container {
+    width: 100%;
+}
+
+.form_input {
+    border: none;
+    text-align: center;
+    border-radius: 0.25em;
+    padding-block: 0.45em;
+    transition: box-shadow 250ms ease-out;
+}
+
+.form_input::placeholder {
+    font-family: var(--ff-alter);
+}
+
+.form_input:focus {
+    outline: none;
+    box-shadow: 0 0 0.125em 0.2em var(--bg-primary-600);
+}
+
+.form_input[readonly] {
+    background-color: var(--clr-grey);
+    color: var(--bg-primary-200);
+}
+
+.form_radio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.25em;
+}

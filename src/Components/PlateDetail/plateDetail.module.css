@@ -1,0 +1,13 @@
+.image {
+    width: 70px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+
+.price {
+    text-transform: uppercase;
+}

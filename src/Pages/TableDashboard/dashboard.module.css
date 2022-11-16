@@ -1,0 +1,36 @@
+.dashboard {
+    max-width: 800px;
+}
+
+.img {
+    width: 125px;
+    aspect-ratio: 1;
+}
+
+.title {
+    color: var(--clr-black);
+    text-transform: uppercase;
+    font-weight: var(--fw-bold);
+}
+
+.btn {
+    padding-inline: 2em;
+    font-size: var(--fs-special);
+    border-color: var(--bg-primary-600);
+}
+
+.btn:hover {
+    background-color: var(--bg-primary-600);
+}
+
+.table{
+    width: 95%;
+    border-spacing: 0 0.5em;
+}
+
+.table_headers{
+    margin-top: 0.25em;
+    color: var(--clr-black);
+    text-transform: capitalize;
+    font-size: var(--fs-general);
+}

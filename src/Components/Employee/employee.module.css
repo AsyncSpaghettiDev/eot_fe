@@ -1,0 +1,23 @@
+.employee {
+    cursor: crosshair;
+    text-transform: capitalize;
+    position: relative;
+    transition: color 200ms ease-out;
+}
+
+.employee::after {
+    border-radius: 2em;
+    position: absolute;
+    content: '';
+    inset: 0;
+    z-index: -1;
+    transition: background-color 300ms ease-out;
+}
+
+.employee:hover {
+    color: var(--clr-white);
+}
+
+.employee:hover::after {
+    background-color: var(--bg-primary-600);
+}

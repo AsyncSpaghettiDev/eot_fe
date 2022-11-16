@@ -1,0 +1,23 @@
+.order-finished .order-title {
+    font-family: var(--ff-main);
+    font-size: var(--fs-general);
+}
+
+.order-finished .order-number,
+.order-finished .order-plate-name,
+.order-finished .order-plate-price,
+.order-finished .order-plate-quantity,
+.order-finished .order-time,
+.order-finished .order-status {
+    font-family: var(--ff-alter);
+    font-size: var(--fs-general);
+}
+
+.number {
+    font-weight: var(--fw-bold);
+}
+
+.img {
+    width: 150px;
+    aspect-ratio: 1;
+}

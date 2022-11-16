@@ -1,0 +1,10 @@
+.menu__title {
+    font-family: var(--ff-main);
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.plates {
+    padding-block-start: 0;
+    gap: 1.25em 1em;
+}

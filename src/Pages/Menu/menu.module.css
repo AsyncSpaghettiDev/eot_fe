@@ -1,0 +1,22 @@
+.menu {
+    justify-content: space-evenly;
+}
+
+.menu__title {
+    font-family: var(--ff-main);
+    flex-basis: 100%;
+    text-align: center;
+}
+
+/*
+    ===============
+    Buttons Section
+    ===============
+*/
+
+.actionBtn {
+    padding-inline: 2em;
+    font-size: var(--fs-special);
+    flex: 1;
+    max-width: 400px;
+}

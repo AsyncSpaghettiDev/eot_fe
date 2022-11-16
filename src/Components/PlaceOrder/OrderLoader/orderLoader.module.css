@@ -1,0 +1,37 @@
+.loader {
+    height: 200px;
+    max-width: 250px;
+    align-content: flex-end;
+    justify-content: space-evenly;
+}
+
+.ball {
+    width: 35px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--bg-primary-800);
+    animation: loader-bounce 400ms ease-in-out alternate infinite;
+}
+
+.ball:nth-child(2) {
+    animation-delay: 150ms;
+}
+
+.ball:nth-child(3) {
+    animation-delay: 250ms;
+}
+
+.text {
+    font-size: var(--fs-title);
+    flex-basis: 100%;
+}
+
+@keyframes loader-bounce {
+    from {
+        transform: scaleX(1.25);
+    }
+
+    to {
+        transform: translateY(-50px) scaleX(1);
+    }
+}

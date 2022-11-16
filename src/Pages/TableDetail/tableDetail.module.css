@@ -1,0 +1,75 @@
+.table__info {
+    max-width: 800px;
+}
+
+.table_hero {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        '. logo title'
+        '. . btn';
+    align-items: flex-end;
+}
+
+.img {
+    grid-area: logo;
+    width: 125px;
+    aspect-ratio: 1;
+    justify-self: center;
+}
+
+.title {
+    grid-area: title;
+    margin-block-end: 0.5em;
+    text-transform: uppercase;
+}
+
+.order_btn {
+    grid-area: btn;
+    padding-inline-start: 1ch;
+    max-width: 15ch;
+}
+
+.table_info {
+    font-size: var(--fs-special);
+}
+
+.table_status {
+    width: 1em;
+    display: inline-block;
+    border-radius: 50%;
+    aspect-ratio: 1;
+}
+
+.Ocupada {
+    background-color: red;
+}
+
+.Pendiente {
+    background-color: orange;
+}
+
+.orders {
+    border-collapse: separate;
+    border-spacing: 0.5em;
+    overflow-x: auto;
+}
+
+.actions {
+    margin-top: 1em;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.subtotal {
+    color: var(--clr-black);
+    font-size: var(--fs-title);
+}
+
+.checkout {
+    padding-block: 1em;
+    padding-inline: 2em;
+    font-size: var(--fs-general);
+    border: 1.5px solid var(--bg-primary-800);
+}

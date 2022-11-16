@@ -1,0 +1,22 @@
+.input--invalid {
+    box-shadow: 0 0 0.125em 0.25em #f009;
+    background-color: #e556;
+    animation: shakeOnInvalid 350ms ease-out forwards;
+    transition: box-shadow 0ms;
+    padding: 0.25em;
+    border-radius: 0.15em;
+}
+
+@keyframes shakeOnInvalid {
+    25% {
+        transform: translateX(-10%);
+    }
+
+    50% {
+        transform: translateX(10%);
+    }
+
+    75% {
+        transform: translateX(-10%);
+    }
+}

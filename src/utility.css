@@ -1,0 +1,299 @@
+/*
+    ===============
+    Display Classes
+    ===============
+*/
+
+/* Flex */
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+}
+
+.hidden {
+    display: none;
+}
+
+/* 
+    ============
+    Text Classes
+    ============
+*/
+
+/* Font Family */
+.ff-main {
+    font-family: var(--ff-main);
+}
+
+.ff-alter {
+    font-family: var(--ff-alter);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*
+    ==========
+    Font Sizes
+    ==========
+*/
+
+.fs-heading {
+    font-size: var(--fs-heading);
+}
+
+.fs-title {
+    font-size: var(--fs-title);
+}
+
+.fs-general {
+    font-size: var(--fs-general);
+}
+
+.fs-special {
+    font-size: var(--fs-special);
+}
+
+.fs-tiny {
+    font-size: var(--fs-tiny);
+}
+
+
+/*
+    ===========
+    Gap Classes
+    ===========
+*/
+.gap-0 {
+    gap: 0;
+}
+
+.gap-1 {
+    gap: 0.25em;
+}
+
+.gap-2 {
+    gap: 0.5em;
+}
+
+.gap-3 {
+    gap: 0.75em;
+}
+
+.gap-4 {
+    gap: 1em;
+}
+
+.gap-row-1 {
+    row-gap: 0.25em;
+}
+
+.gap-row-2 {
+    row-gap: 0.5em;
+}
+
+.gap-row-3 {
+    row-gap: 0.75em;
+}
+
+.gap-row-4 {
+    row-gap: 1em;
+}
+
+.gap-column-1 {
+    column-gap: 0.25em;
+}
+
+.gap-column-2 {
+    column-gap: 0.5em;
+}
+
+.gap-column-3 {
+    column-gap: 0.75em;
+}
+
+.gap-column-4 {
+    column-gap: 1em;
+}
+
+
+/*
+    ==============
+    Padding Styles
+    ==============
+*/
+
+.pad-0 {
+    padding: 0;
+}
+
+.pad-1 {
+    padding: 0.25em;
+}
+
+.pad-2 {
+    padding: 0.5em;
+}
+
+.pad-3 {
+    padding: 0.75em;
+}
+
+.pad-4 {
+    padding: 1em;
+}
+
+.padx-0 {
+    padding-inline: 0;
+}
+
+.padx-1 {
+    padding-inline: 0.25em;
+}
+
+.padx-2 {
+    padding-inline: 0.5em;
+}
+
+.padx-3 {
+    padding-inline: 0.75em;
+}
+
+.padx-4 {
+    padding-inline: 1em;
+}
+
+.padx-5 {
+    padding-inline: 1.25em;
+}
+
+.padx-6 {
+    padding-inline: 1.5em;
+}
+
+.pady-0 {
+    padding-block: 0;
+}
+
+.pady-1 {
+    padding-block: 0.25em;
+}
+
+.pady-2 {
+    padding-block: 0.5em;
+}
+
+.pady-3 {
+    padding-block: 0.75em;
+}
+
+.pady-4 {
+    padding-block: 1em;
+}
+
+.pady-5 {
+    padding-block: 1.25em;
+}
+
+.pady-6 {
+    padding-block: 1.5em;
+}
+
+/*
+    =============
+    Margin Styles
+    =============
+*/
+
+.marg-auto {
+    margin: auto;
+}
+
+.margx-auto {
+    margin-inline: auto;
+}
+
+.margy-auto {
+    margin-block: auto;
+}
+
+.marg-0 {
+    margin: 0;
+}
+
+.marg-1 {
+    margin: 0.25em;
+}
+
+.marg-2 {
+    margin: 0.5em;
+}
+
+.marg-3 {
+    margin: 0.75em;
+}
+
+.margx-0 {
+    margin-inline: 0;
+}
+
+.margx-1 {
+    margin-inline: 0.25em;
+}
+
+.margx-2 {
+    margin-inline: 0.5em;
+}
+
+.margx-3 {
+    margin-inline: 0.75em;
+}
+
+.margx-4 {
+    margin-inline: 1em;
+}
+
+.margy-0 {
+    margin-block: 0;
+}
+
+.margy-1 {
+    margin-block: 0.25em;
+}
+
+.margy-2 {
+    margin-block: 0.5em;
+}
+
+.margy-3 {
+    margin-block: 0.75em;
+}
+
+.margy-4 {
+    margin-block: 1em;
+}

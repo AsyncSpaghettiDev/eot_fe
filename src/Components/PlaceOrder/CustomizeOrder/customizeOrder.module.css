@@ -1,0 +1,56 @@
+.customize_order {
+    margin-block-start: 1em;
+}
+
+.image {
+    max-width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-block-end: 0.75em;
+    width: clamp(200px, 85%, 350px);
+    box-shadow: 0 0.25em 0.75em 0.15em var(--bg-primary-800);
+}
+
+.name {
+    font-size: var(--fs-title);
+}
+
+.price {
+    font-weight: var(--fw-bold);
+}
+
+.description,
+.counter,
+.price {
+    font-family: var(--ff-alter);
+    font-size: var(--fs-general);
+}
+
+.counter_btn {
+    width: 2em;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    color: var(--bg-primary-800);
+    font-size: var(--fs-general);
+    border: 1px solid var(--bg-primary-800);
+    transition: background-color 200ms ease-in, color 150ms 100ms ease-out;
+}
+
+.counter_btn:hover:not(:disabled) {
+    background-color: var(--bg-primary-800);
+    color: var(--bg-primary-200);
+}
+
+.counter_btn:disabled {
+    color: var(--clr-grey);
+    border-color: var(--clr-grey);
+}
+
+.confirm {
+    text-transform: uppercase;
+    padding: 1em 2em;
+    font-family: var(--ff-main);
+    margin-block-start: 1em;
+    font-size: var(--fs-special);
+}

@@ -1,0 +1,25 @@
+.notfound {
+    height: 95vh;
+    place-content: center;
+    place-items: center;
+    word-wrap: break-word;
+}
+
+.image {
+    width: 250px;
+    aspect-ratio: 1;
+}
+
+.title {
+    color: var(--clr-black);
+}
+
+.description {
+    color: var(--clr-grey);
+    font-size: var(--fs-especial);
+}
+
+.return {
+    padding: 0.75em 2.5em;
+    font-size: var(--fs-especial);
+}

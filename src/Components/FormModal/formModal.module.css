@@ -1,0 +1,18 @@
+.modal_btn{
+    width: 10ch;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--ff-alter);
+    row-gap: 0.25em;
+}
+
+.form_exception{
+    color: #f00;
+    background-color: var(--bg-primary-200);
+    padding: 0.25em;
+    border-radius: 0.25em;
+}

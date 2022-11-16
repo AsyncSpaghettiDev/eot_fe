@@ -1,0 +1,59 @@
+.home {
+    height: 95vh;
+}
+
+.title {
+    flex-basis: 100%;
+}
+
+.link,
+.flotant {
+    text-decoration: none;
+    color: var(--clr-black);
+    border-radius: 0.25em;
+}
+
+.link {
+    width: clamp(150px, 40%, 225px);
+    margin: 0.5em;
+}
+
+.flotant {
+    top: 0.25em;
+    right: 0.5em;
+    position: absolute;
+    width: 50px;
+}
+
+.flotant_img {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.link:hover {
+    box-shadow:
+        0 0 0 0.25em var(--bg-primary-200),
+        0 0 0.25em var(--clr-grey),
+        0 0 0.25em 0.5em var(--bg-primary-800);
+}
+
+.last_link {
+    height: 4rem;
+    width: 100%;
+}
+
+.last_link:hover {
+    box-shadow: none;
+    cursor: default;
+}
+
+.welcome_message {
+    position: fixed;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--ff-main);
+    font-size: var(--fs-title);
+    cursor: not-allowed;
+    width: 100%;
+}
