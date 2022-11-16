@@ -30,7 +30,9 @@ const App = () => {
 
     // On reload
     useEffect(() => {
-        fetch('https://eotapp.alwaysdata.net/api/auth').then(res => res.json()).then(data => {
+        fetch('https://eotapp.alwaysdata.net/api/auth/', {
+            credentials: 'include'
+        }).then(res => res.json()).then(data => {
             setAuthContextApi({
                 auth: data.auth,
                 username: data.user,
