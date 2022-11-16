@@ -5,7 +5,7 @@ export const authenticate = async ({ user, password }) => {
         method: 'POST',
         body: JSON.stringify({ user, password }),
         headers: { "Content-Type": "Application/JSON" },
-        credentials: true
+        credentials: 'include'
     });
 
     if (res.status === 404 || res.status === 400)
@@ -17,7 +17,7 @@ export const authenticate = async ({ user, password }) => {
 export const systemLogout = async () => {
     const res = await fetch('https://eotapp.alwaysdata.net/api/auth/', {
         method: 'DELETE',
-        credentials: true
+        credentials: 'include'
     })
     return res.json();
 }
