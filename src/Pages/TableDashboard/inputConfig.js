@@ -33,7 +33,7 @@ export const configurationAdd = (lastTableNo) => ({
     },
     confirmButtonText: 'Añadir',
     onSubmitAction: async ({ table__code, table__capacity, table__password }) => {
-        const response = await fetch('/api/dashboard/table', {
+        const response = await fetch('https://eotapp.alwaysdata.net/api/dashboard/table', {
             method: 'POST',
             body: JSON.stringify(
                 {

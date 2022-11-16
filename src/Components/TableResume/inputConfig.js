@@ -44,7 +44,7 @@ export const configurationUpdate = (table__id, table__capacity, finallyCallback)
     },
     confirmButtonText: 'Actualizar',
     onSubmitAction: async ({ table__id, table__capacity }) => {
-        await fetch(`/api/dashboard/tables/${table__id}`, {
+        await fetch(`https://eotapp.alwaysdata.net/api/dashboard/tables/${table__id}`, {
             method: 'PUT',
             body: JSON.stringify({
                 table__capacity
@@ -65,7 +65,7 @@ export const createActivityConfig = (tableId, tableCapacity, finallyCallback) =>
     },
     confirmButtonText: 'Crear',
     onSubmitAction: async (dataP) => {
-        await fetch(`/api/dashboard/tables/${tableId}`, {
+        await fetch(`https://eotapp.alwaysdata.net/api/dashboard/tables/${tableId}`, {
             method: 'POST',
             body: JSON.stringify({
                 ...dataP

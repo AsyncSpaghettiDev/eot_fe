@@ -1,5 +1,5 @@
 export const releaseTable = async (tableId, lastActivity, updateTables) => {
-    const res = await fetch(`/api/dashboard/tables/${tableId}`, {
+    const res = await fetch(`https://eotapp.alwaysdata.net/api/dashboard/tables/${tableId}`, {
         method: 'DELETE',
         body: JSON.stringify({
             lastActivity
@@ -16,6 +16,6 @@ export const releaseTable = async (tableId, lastActivity, updateTables) => {
 }
 
 export const getTables = async () => {
-    const res = await fetch('/api/dashboard/tables');
+    const res = await fetch('https://eotapp.alwaysdata.net/api/dashboard/tables');
     return res.json();
 }

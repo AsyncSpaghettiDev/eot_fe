@@ -1,7 +1,7 @@
 import { InvalidCredentialsException } from '../Utils/errors';
 
 export const authenticate = async ({ user, password }) => {
-    const res = await fetch('/api/auth/', {
+    const res = await fetch('https://eotapp.alwaysdata.net/api/auth/', {
         method: 'POST',
         body: JSON.stringify({ user, password }),
         headers: { "Content-Type": "Application/JSON" }
@@ -14,7 +14,7 @@ export const authenticate = async ({ user, password }) => {
 }
 
 export const systemLogout = async () => {
-    const res = await fetch('/api/auth/', {
+    const res = await fetch('https://eotapp.alwaysdata.net/api/auth/', {
         method: 'DELETE'
     })
     return res.json();
