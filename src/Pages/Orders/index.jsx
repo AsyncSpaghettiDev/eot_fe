@@ -15,7 +15,7 @@ import { getOrders } from "../../Services";
 export const Orders = () => {
     // Hooks
     const [orders, setOrders] = useState({});
-    const { elapsedTime, elapsedMessage } = useTimer(120);
+    const { elapsedTime, elapsedMessage } = useTimer(30);
 
     document.title = `EatOnTime - Ordenes`;
 
