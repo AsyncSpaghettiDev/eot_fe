@@ -1,5 +1,6 @@
 // Imports
 import { useEffect, useState } from "react";
+import { useTimer } from '../../Hooks/useTimer';
 
 // Components
 import { NavBar } from "../../Components/NavBar";
@@ -14,6 +15,7 @@ import { getOrders } from "../../Services";
 export const Orders = () => {
     // Hooks
     const [orders, setOrders] = useState({});
+    const { elapsedTime, elapsedMessage } = useTimer(120);
 
     document.title = `EatOnTime - Ordenes`;
 
@@ -22,6 +24,11 @@ export const Orders = () => {
         collectOrders();
         return () => setOrders({});
     }, []);
+
+    useEffect(() => {
+        if (elapsedTime === 0)
+            collectOrders();
+    }, [elapsedTime]);
 
     // Functions
     const confirmTrigger = () => {
@@ -51,6 +58,7 @@ export const Orders = () => {
         <main className="orders">
             <NavBar />
             <h1 className={styles.title}>Ordenes activas</h1>
+            <h2 className={styles.title}>{elapsedMessage}</h2>
             <div className={styles.list}>
                 <h2 className={`${styles.title} ${styles.fit}`}>Ordenes Recien Llegadas</h2>
                 {
