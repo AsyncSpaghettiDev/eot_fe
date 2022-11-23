@@ -20,12 +20,14 @@ import { configurationAdd } from './inputConfig';
 
 // Services
 import { getTables } from '../../Services/dashboard';
+import { useTimer } from '../../Hooks/useTimer';
 
 export const TableDashboard = () => {
     // Hooks
     const [tables, setTables] = useState([]);
     const [editMode, setEditMode] = useState(false);
     const { showForm, FormModalComponent } = useFormModal();
+    const { elapsedTime, elapsedMessage } = useTimer(30);
 
     const lastTableCode = useMemo(() => tables[tables.length - 1]?.table__code?.slice(5), [tables]);
 
@@ -35,6 +37,11 @@ export const TableDashboard = () => {
     useEffect(() => {
         fetchTables();
     }, []);
+
+    useEffect(() => {
+        if (elapsedTime === 0)
+            fetchTables();
+    }, [elapsedTime]);
 
     // Handlers
     const onNewHandler = e => {
@@ -55,7 +62,8 @@ export const TableDashboard = () => {
 
             <div className="flex flex-wrap flex-column align-items-center justify-content-center margx-auto margy-4">
                 <img className={`${styles.img}`} src={HeroImage} alt="dashboard logo" />
-                <h2 className={`${styles.title} ff-main text-center`}>Mesas {editMode && "(Edit Mode)"} </h2>
+                <h2 className={`${styles.title} ff-main text-center`}>Mesas {editMode && "(Edit Mode)"} </h2>`
+                <h3 className={styles.title}>{elapsedMessage}</h3>
             </div>
 
             <ProtectContent requiredRole={'ADMIN'}>
