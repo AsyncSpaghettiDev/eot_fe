@@ -63,7 +63,7 @@ export const TableDashboard = () => {
             <div className="flex flex-wrap flex-column align-items-center justify-content-center margx-auto margy-4">
                 <img className={`${styles.img}`} src={HeroImage} alt="dashboard logo" />
                 <h2 className={`${styles.title} ff-main text-center`}>Mesas {editMode && "(Edit Mode)"} </h2>`
-                <h3 className={styles.title}>{elapsedMessage}</h3>
+                <h3 className={`${styles.title} ff-main text-center`}>{elapsedMessage}</h3>
             </div>
 
             <ProtectContent requiredRole={'ADMIN'}>
