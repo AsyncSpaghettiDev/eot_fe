@@ -8,8 +8,29 @@ import NotFoundImage from '../../Images/userNF.png';
 const CreatorsList = [
     {
         name: 'Jonathan Mojica',
-        description: 'Programador, diseñador, administrador, QA.'
-    }
+        description: 'Programador backend, programador frontend, diseñador, QA.',
+        img: 'https://iili.io/H267vrg.jpg'
+    },
+    {
+        name: 'Felix Bojorquez Israel',
+        description: 'Programador backend',
+    },
+    {
+        name: 'Ponce Mejia Susan Sarahi',
+        description: 'Scrum Master',
+    },
+    {
+        name: 'Figueroa Parra Francisco Manuel',
+        description: 'Product Owner',
+    },
+    {
+        name: 'Vazquez Gutierrez Johan Sebastian',
+        description: 'Diseñador',
+    },
+    {
+        name: 'Magaña Navarro Kevin Yahir',
+        description: 'Tester',
+    },
 ]
 
 // Components
