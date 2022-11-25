@@ -14,22 +14,27 @@ const CreatorsList = [
     {
         name: 'Felix Bojorquez Israel',
         description: 'Programador backend',
+        img: 'https://iili.io/HFx3LQ9.jpg',
     },
     {
         name: 'Ponce Mejia Susan Sarahi',
         description: 'Scrum Master',
+        img: 'https://iili.io/HFxqN8G.jpg',
     },
     {
         name: 'Figueroa Parra Francisco Manuel',
         description: 'Product Owner',
+        img: 'https://iili.io/H2PPuCx.jpg',
     },
     {
         name: 'Vazquez Gutierrez Johan Sebastian',
         description: 'Diseñador',
+        img: 'https://iili.io/H37kPhg.jpg',
     },
     {
         name: 'Magaña Navarro Kevin Yahir',
         description: 'Tester',
+        img: 'https://iili.io/H2P4BP2.jpg',
     },
 ]
 
